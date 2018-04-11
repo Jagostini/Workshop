@@ -9,7 +9,12 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  role = 0;
   ngOnInit() {
+  }
+
+  gotoNextPage(r:number) {
+    this.role = r;
   }
 
 }
