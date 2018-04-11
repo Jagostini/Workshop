@@ -20,6 +20,9 @@ export class AdminComponent implements OnInit {
   goToEleve() {
     this.route.navigate(['adminEleve']);
   }
-  
+
+  goToIntervenant() {
+    this.route.navigate(['adminIntervenant']);
+  }
 
 }

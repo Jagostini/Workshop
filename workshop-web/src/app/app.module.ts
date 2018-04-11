@@ -17,9 +17,10 @@ import { HomeComponent } from './home/home.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
-import { AdminComponent } from './admin/admin.component';
-import { VueProjetAdminComponent } from './vue-projet-admin/vue-projet-admin.component';
-import { VueFicheEleveComponent } from './vue-fiche-eleve/vue-fiche-eleve.component';
+import { AdminComponent } from './admin-page/admin/admin.component';
+import { VueProjetAdminComponent } from './admin-page/vue-projet-admin/vue-projet-admin.component';
+import { VueFicheEleveComponent } from './admin-page/vue-fiche-eleve/vue-fiche-eleve.component';
+import { VueFicheIntervenantComponent } from './admin-page/vue-fiche-intervenant/vue-fiche-intervenant.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { VueFicheEleveComponent } from './vue-fiche-eleve/vue-fiche-eleve.compon
     HeaderComponent,
     AdminComponent,
     VueProjetAdminComponent,
-    VueFicheEleveComponent
+    VueFicheEleveComponent,
+    VueFicheIntervenantComponent
   ],
   imports: [
     BrowserModule,

@@ -5,16 +5,17 @@ import { Routes, RouterModule } from '@angular/router';
 // router
 import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
-import { AdminComponent } from './admin/admin.component';
-import { VueProjetAdminComponent } from './vue-projet-admin/vue-projet-admin.component';
-import { VueFicheEleveComponent } from './vue-fiche-eleve/vue-fiche-eleve.component';
-
+import { AdminComponent } from './admin-page/admin/admin.component';
+import { VueProjetAdminComponent } from './admin-page/vue-projet-admin/vue-projet-admin.component';
+import { VueFicheEleveComponent } from './admin-page/vue-fiche-eleve/vue-fiche-eleve.component';
+import { VueFicheIntervenantComponent } from './admin-page/vue-fiche-intervenant/vue-fiche-intervenant.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'adminProjet', component: VueProjetAdminComponent },
-  { path: 'adminEleve', component: VueFicheEleveComponent }
+  { path: 'adminEleve', component: VueFicheEleveComponent },
+  { path: 'adminIntervenant', component: VueFicheIntervenantComponent }
 ];
 
 @NgModule({
@@ -26,4 +27,10 @@ const routes: Routes = [
   declarations: []
 })
 export class AppRoutingModule { }
-export const routingComponents = [ HomeComponent, AdminComponent, VueProjetAdminComponent ];
+export const routingComponents = [
+  HomeComponent,
+  AdminComponent,
+  VueProjetAdminComponent,
+  VueFicheEleveComponent,
+  VueFicheIntervenantComponent
+];
