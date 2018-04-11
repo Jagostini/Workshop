@@ -13,7 +13,7 @@ import { AppRoutingModule, routingComponents } from './../app-routing.module';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private route: RouterLinkActive, private location: Location) {}
+  constructor(private route: Router) {}
 
 
   etudiant1: Etudiant = { id: 5, idGroupe: 5, prenom: "toto", nom: "toto" , classe: "EPSI B3", email: "toto@gmail.com", motDePasse: "toto" };
@@ -56,6 +56,7 @@ export class HomeComponent implements OnInit {
         console.log("bravo");
         this.etat=true;
         this.routAdmin = true;
+        this.route.navigate(['admin']);
       } else {
         this.etat=false;
         console.log("connexion refusé");
