@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
+import { AdminComponent } from './admin/admin.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { HeaderComponent } from './header/header.component';
     AppComponent,
     ListComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

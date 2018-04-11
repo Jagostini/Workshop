@@ -3,6 +3,8 @@ import { IntervenantService, intervenant } from './../service/intervenant/interv
 import { AdministrationService, Administration } from './../service/administration/administration.service';
 import { EtudiantService, Etudiant } from './../service/etudiant/etudiant.service';
 import { groupe } from '../service/groupe/groupe.service';
+import { Router, RouterLinkActive } from '@angular/router';
+import { AppRoutingModule, routingComponents } from './../app-routing.module';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +13,7 @@ import { groupe } from '../service/groupe/groupe.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: RouterLinkActive, private location: Location) {}
 
 
   etudiant1: Etudiant = { id: 5, idGroupe: 5, prenom: "toto", nom: "toto" , classe: "EPSI B3", email: "toto@gmail.com", motDePasse: "toto" };
@@ -26,9 +28,10 @@ export class HomeComponent implements OnInit {
   login: string;
   motDePasse: string;
 
-
   role = 1;
   etat=true;
+  routAdmin = false;
+
   ngOnInit() {
   }
 
@@ -52,6 +55,7 @@ export class HomeComponent implements OnInit {
       if(this.administration1.motDePasse.localeCompare(this.motDePasse) === 0 && this.administration1.nom.localeCompare(this.login) === 0) {
         console.log("bravo");
         this.etat=true;
+        this.routAdmin = true;
       } else {
         this.etat=false;
         console.log("connexion refusé");
