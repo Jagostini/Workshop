@@ -27,7 +27,8 @@ export class HomeComponent implements OnInit {
   motDePasse: string;
 
 
-  role = 0;
+  role = 1;
+  etat=true;
   ngOnInit() {
   }
 
@@ -50,22 +51,32 @@ export class HomeComponent implements OnInit {
     if(this.role == 1) {
       if(this.administration1.motDePasse.localeCompare(this.motDePasse) === 0 && this.administration1.nom.localeCompare(this.login) === 0) {
         console.log("bravo");
+        this.etat=true;
       } else {
+        this.etat=false;
         console.log("connexion refusé");
       }
       
     }
     if(this.role == 3) {
-      if(this.etudiant1.motDePasse == this.motDePasse && this.etudiant1.nom == this.login ) {
+      if(this.etudiant1.motDePasse.localeCompare(this.motDePasse) === 0 && this.etudiant1.nom.localeCompare(this.login) === 0) {
         console.log("gotoEtudiant");
+        this.etat=true;
+      } else {
+        this.etat=false;
+        console.log("connexion refusé");
       }
-      console.log("connexion refusé");
+      
     }
     if(this.role == 2) {
-      if(this.intervenant1.motDePasse == this.motDePasse && this.intervenant1.nom == this.login ) {
+      if(this.intervenant1.motDePasse.localeCompare(this.motDePasse) === 0 && this.intervenant1.nom. localeCompare(this.motDePasse) === 0) {
         console.log("gotoIntervenant");
+        this.etat=true;
+      } else {
+        this.etat=false;
+        console.log("connexion refusé");
       }
-      console.log("connexion refusé");
+      
     }
   }
 
