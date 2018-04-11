@@ -18,6 +18,8 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { AdminComponent } from './admin/admin.component';
+import { VueProjetAdminComponent } from './vue-projet-admin/vue-projet-admin.component';
+import { VueFicheEleveComponent } from './vue-fiche-eleve/vue-fiche-eleve.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { AdminComponent } from './admin/admin.component';
     ListComponent,
     HomeComponent,
     HeaderComponent,
-    AdminComponent
+    AdminComponent,
+    VueProjetAdminComponent,
+    VueFicheEleveComponent
   ],
   imports: [
     BrowserModule,

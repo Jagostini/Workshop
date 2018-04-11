@@ -6,11 +6,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
+import { VueProjetAdminComponent } from './vue-projet-admin/vue-projet-admin.component';
+import { VueFicheEleveComponent } from './vue-fiche-eleve/vue-fiche-eleve.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'admin', component: AdminComponent }
+  { path: 'admin', component: AdminComponent },
+  { path: 'adminProjet', component: VueProjetAdminComponent },
+  { path: 'adminEleve', component: VueFicheEleveComponent }
 ];
 
 @NgModule({
@@ -22,4 +26,4 @@ const routes: Routes = [
   declarations: []
 })
 export class AppRoutingModule { }
-export const routingComponents = [ HomeComponent, AdminComponent ];
+export const routingComponents = [ HomeComponent, AdminComponent, VueProjetAdminComponent ];
