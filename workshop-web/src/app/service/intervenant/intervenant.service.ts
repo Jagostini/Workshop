@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-interface intervenant {
+export interface intervenant {
   id: number;
   idProjet: number;
   nom: string;
@@ -8,7 +8,8 @@ interface intervenant {
   competence: string;
   disponibilite: string;
   // a voir en prog
-  tempsRealise: string;
+  tempsRealise: number;
+  motDePasse: string;
 }
 
 @Injectable()
