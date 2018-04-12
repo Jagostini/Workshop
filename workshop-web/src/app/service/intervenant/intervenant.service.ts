@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 
+// tslint:disable-next-line:class-name
 export interface intervenant {
   id: number;
   idProjet: number;

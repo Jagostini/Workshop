@@ -23,6 +23,12 @@ import { VueFicheEleveComponent } from './admin-page/vue-fiche-eleve/vue-fiche-e
 import { VueFicheIntervenantComponent } from './admin-page/vue-fiche-intervenant/vue-fiche-intervenant.component';
 import { EleveComponent } from './eleve-page/eleve/eleve.component';
 import { ListIntervenantEleveComponent } from './eleve-page/list-intervenant-eleve/list-intervenant-eleve.component';
+import { ChoixEleveComponent } from './choix-eleve/choix-eleve.component';
+import { ListProjetEleveComponent } from './list-projet-eleve/list-projet-eleve.component';
+import { NewTeamEleveComponent } from './new-team-eleve/new-team-eleve.component';
+import { ValidationIntervenantEleveComponent } from './validation-intervenant-eleve/validation-intervenant-eleve.component';
+import { VuIntervenantEleveComponent } from './vu-intervenant-eleve/vu-intervenant-eleve.component';
+import { VuProjetEleveComponent } from './vu-projet-eleve/vu-projet-eleve.component';
 
 
 @NgModule({
@@ -36,7 +42,13 @@ import { ListIntervenantEleveComponent } from './eleve-page/list-intervenant-ele
     VueFicheEleveComponent,
     VueFicheIntervenantComponent,
     EleveComponent,
-    ListIntervenantEleveComponent
+    ListIntervenantEleveComponent,
+    ChoixEleveComponent,
+    ListProjetEleveComponent,
+    NewTeamEleveComponent,
+    ValidationIntervenantEleveComponent,
+    VuIntervenantEleveComponent,
+    VuProjetEleveComponent
   ],
   imports: [
     BrowserModule,
