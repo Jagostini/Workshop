@@ -75,10 +75,13 @@
     <!-- rasterized frame -->
     <div class="clip_frame colelem" id="u489">
       <div class="wrap-input100 validate-input">
-        
-        <input class="input100" #password placeholder="Password" type="password" name="pass">
+
+        <input class="input100" #pwd placeholder="Password" type="password" name="pass">
         <span class="focus-input100"></span>
       </div>
+    </div>
+    <div *ngIf="etat === false">
+      <p>Connexion refusée</p>
     </div>
 
     <div class="clearfix colelem" id="u318">
