@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 
-  list = ['jules','aubin','benjamin'];
+  list = ['jules', 'aubin', 'benjamin'];
 }

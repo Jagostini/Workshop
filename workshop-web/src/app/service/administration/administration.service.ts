@@ -4,6 +4,7 @@ export interface Administration{
   id: number;
   nom: string;
   prenom: string;
+  motDePasse: string;
 }
 
 @Injectable()

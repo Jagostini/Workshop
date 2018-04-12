@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-interface groupe {
+export interface groupe {
   id: number;
   idProjet: number;
   nomGroupe: string;

@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 
-interface Etudiant {
+export interface Etudiant {
   id: number;
   idGroupe: number;
   prenom: string;
   nom: string;
-  annee: number;
+  classe: string;
   email: string;
+  motDePasse: string;
 }
 
 @Injectable()
