@@ -21,61 +21,24 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 
   <div class="clearfix borderbox" id="page"><!-- column -->
    <div class="position_content" id="page_position_content">
-    <div class="clearfix colelem" id="pu131"><!-- group -->
-     <div class="browser_width grpelem" id="u131-bw">
-      <div id="u131"><!-- simple frame --></div>
-     </div>
-     <div class="clip_frame grpelem" id="u352"><!-- image -->
+    <div class="clearfix colelem" id="pu97"><!-- group -->
+     <div class="clip_frame grpelem" id="u97"><!-- image -->
       
      </div>
-     <div class="clearfix grpelem" id="u236-4"><!-- content -->
-      <p>Eleve</p>
+     <div class="clip_frame grpelem" id="u99" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+      
+     </div>
+     <div class="clearfix grpelem" id="u101-4"><!-- content -->
+      <p>Liste intervenant(s)</p>
      </div>
     </div>
-    <div class="clearfix colelem" id="pu175-4"><!-- group -->
-     <div class="clearfix grpelem" id="u175-4"><!-- content -->
-      <p>Classe&nbsp; :</p>
-     </div>
-     <div class="clearfix grpelem" id="u178-4"><!-- content -->
-      <p>Groupe :</p>
-     </div>
-     <div class="clearfix grpelem" id="u181-4"><!-- content -->
-      <p>Jetons du groupe :</p>
-     </div>
-     <div class="rounded-corners grpelem" id="u206"><!-- simple frame --></div>
-     <div class="clearfix grpelem" id="u209-4"><!-- content -->
-      <p>Jules Agostini</p>
-     </div>
-     <div class="clearfix grpelem" id="u212-4"><!-- content -->
-      <p>Informations :</p>
-     </div>
-     <div class="clearfix grpelem" id="u215-4"><!-- content -->
-      <p>EPSI B3</p>
-     </div>
-     <div class="clearfix grpelem" id="u218-4"><!-- content -->
-      <p>Groupe 1</p>
-     </div>
-     <div class="rounded-corners clearfix grpelem" id="u221"><!-- group -->
-      <div class="clearfix grpelem" id="u227-4"><!-- content -->
-       <p>10</p>
-      </div>
-     </div>
-     <div class="clearfix grpelem" id="u230-4"><!-- content -->
-      <p>Projet&nbsp;&nbsp; :</p>
-     </div>
-     <div class="clearfix grpelem" id="u233-4"><!-- content -->
-      <p>Projet 1</p>
-     </div>
-     <div class="clearfix grpelem" id="u319"><!-- group -->
-      <div class="clip_frame grpelem" id="u366" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
-       
-      </div>
-      <div class="clip_frame grpelem" id="u368" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
-       
-      </div>
+    <div class="clearfix colelem" id="u94"><!-- group -->
+     <div class="rounded-corners grpelem" id="u96"><!-- simple frame --></div>
+     <div class="clearfix grpelem" id="u95-4"><!-- content -->
+      <p>intervenant 1</p>
      </div>
     </div>
-    <div class="verticalspacer" data-offset-top="620" data-content-above-spacer="617" data-content-below-spacer="63" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="verticalspacer" data-offset-top="170" data-content-above-spacer="169" data-content-below-spacer="330" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
    </div>
   </div>
   <!-- Other scripts -->
@@ -93,8 +56,6 @@ var muse_init=function(){require.config({baseUrl:""});require(["jquery","museuti
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
-Muse.Utils.resizeHeight('.browser_width');/* resize height */
-Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
 Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
 Muse.Utils.fullPage('#page');/* 100% height page */
 Muse.Utils.showWidgetsWhenReady();/* body */

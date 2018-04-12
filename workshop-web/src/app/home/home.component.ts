@@ -67,6 +67,7 @@ export class HomeComponent implements OnInit {
       if(this.etudiant1.motDePasse.localeCompare(this.motDePasse) === 0 && this.etudiant1.nom.localeCompare(this.login) === 0) {
         console.log("gotoEtudiant");
         this.etat=true;
+        this.route.navigate(['eleve']);
       } else {
         this.etat=false;
         console.log("connexion refusé");

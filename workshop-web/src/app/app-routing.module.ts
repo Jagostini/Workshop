@@ -9,13 +9,17 @@ import { AdminComponent } from './admin-page/admin/admin.component';
 import { VueProjetAdminComponent } from './admin-page/vue-projet-admin/vue-projet-admin.component';
 import { VueFicheEleveComponent } from './admin-page/vue-fiche-eleve/vue-fiche-eleve.component';
 import { VueFicheIntervenantComponent } from './admin-page/vue-fiche-intervenant/vue-fiche-intervenant.component';
+import { EleveComponent } from './eleve-page/eleve/eleve.component';
+import { ListIntervenantEleveComponent } from './eleve-page/list-intervenant-eleve/list-intervenant-eleve.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'adminProjet', component: VueProjetAdminComponent },
   { path: 'adminEleve', component: VueFicheEleveComponent },
-  { path: 'adminIntervenant', component: VueFicheIntervenantComponent }
+  { path: 'adminIntervenant', component: VueFicheIntervenantComponent },
+  { path: 'eleve', component: EleveComponent },
+  { path: 'eleveListIntervenant', component: ListIntervenantEleveComponent }
 ];
 
 @NgModule({
@@ -32,5 +36,7 @@ export const routingComponents = [
   AdminComponent,
   VueProjetAdminComponent,
   VueFicheEleveComponent,
-  VueFicheIntervenantComponent
+  VueFicheIntervenantComponent,
+  EleveComponent,
+  ListIntervenantEleveComponent
 ];
