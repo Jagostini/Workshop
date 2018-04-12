@@ -21,24 +21,43 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 
   <div class="clearfix borderbox" id="page"><!-- column -->
    <div class="position_content" id="page_position_content">
-    <div class="clearfix colelem" id="pu97"><!-- group -->
-     <div class="clip_frame grpelem" id="u97"><!-- image -->
-      
+    <div class="clearfix colelem" id="pu105"><!-- group -->
+     <div class="browser_width grpelem" id="u105-bw">
+      <div id="u105"><!-- simple frame --></div>
      </div>
-     <div class="clip_frame grpelem" id="u99" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
-      
+     <div class="clip_frame grpelem" id="u112"><!-- image -->
+      <img class="block" id="u112_img" src="images/image%20coll%c3%a9e%20387%20x%2092.png?crc=4111322005" alt="" data-heightwidthratio="0.23705722070844687" data-image-width="367" data-image-height="87"/>
      </div>
-     <div class="clearfix grpelem" id="u101-4"><!-- content -->
-      <p>Liste intervenant(s)</p>
-     </div>
-    </div>
-    <div *ngFor="let element of listProjet" class="clearfix colelem" id="u94"><!-- group -->
-     <div class="rounded-corners grpelem" id="u96"><!-- simple frame --></div>
-     <div class="clearfix grpelem" id="u95-4"><!-- content -->
-      <span (click)="goToVueIntervenant()">{{element}}</span>
+     <div class="clearfix grpelem" id="u114-4"><!-- content -->
+      <p>Nouvelle equipe</p>
      </div>
     </div>
-    <div class="verticalspacer" data-offset-top="170" data-content-above-spacer="169" data-content-below-spacer="330" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="clearfix colelem" id="u104"><!-- column -->
+     <div class="clearfix colelem" id="pu106"><!-- group -->
+      <div class="rounded-corners grpelem" id="u106"><!-- simple frame --></div>
+      <div class="clearfix grpelem" id="u107-4"><!-- content -->
+       <p>Projet 1</p>
+      </div>
+     </div>
+     <div class="clearfix colelem" id="u108-4"><!-- content -->
+      <p>Membres :</p>
+     </div>
+     <div class="clip_frame colelem" id="u152" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+      <img class="block" id="u152_img" src="images/image%20coll%c3%a9e%2088%20x%2088.png?crc=4175605497" alt="" width="88" height="88"/>
+     </div>
+     <div class="clearfix colelem" id="u109-4"><!-- content -->
+      <p>Jetons accordés :</p>
+     </div>
+     <div class="rounded-corners clearfix colelem" id="u110"><!-- group -->
+      <div class="clearfix grpelem" id="u111-4"><!-- content -->
+       <p>10</p>
+      </div>
+     </div>
+     <div class="clip_frame colelem" id="u115" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+      <img class="block" id="u115_img" src="images/image%20coll%c3%a9e%20191%20x%2042.png?crc=4062104186" alt="" width="191" height="42"/>
+     </div>
+    </div>
+    <div class="verticalspacer" data-offset-top="614" data-content-above-spacer="614" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
    </div>
   </div>
   <!-- Other scripts -->
@@ -56,6 +75,8 @@ var muse_init=function(){require.config({baseUrl:""});require(["jquery","museuti
 window.Muse.assets.check($);/* body */
 Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
 Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
 Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
 Muse.Utils.fullPage('#page');/* 100% height page */
 Muse.Utils.showWidgetsWhenReady();/* body */

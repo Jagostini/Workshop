@@ -17,4 +17,8 @@ export class EleveComponent implements OnInit {
     this.route.navigate(['eleveListIntervenant']);
   }
 
+  goToListProjet() {
+    this.route.navigate(['eleveListProjet']);
+  }
+
 }

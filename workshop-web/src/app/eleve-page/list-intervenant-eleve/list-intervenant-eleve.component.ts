@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-list-intervenant-eleve',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListIntervenantEleveComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
 
+  listProjet = ['Elon Musk', 'Benjamin Tourman']
   ngOnInit() {
+  }
+
+  goToVueIntervenant() {
+    this.route.navigate(['eleveVueIntervenant']);
   }
 
 }

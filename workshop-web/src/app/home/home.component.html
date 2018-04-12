@@ -34,16 +34,16 @@
 
     <div class="clearfix colelem" id="pu318">
       <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
-        <input #name class="input100" type="text" name="email">
-        <span class="focus-input100" data-placeholder="Nom"></span>
+        <input #name class="input100" placeholder="Nom" type="text" name="email">
+        <span class="focus-input100" ></span>
       </div>
 
-      <div class="wrap-input100 validate-input" data-validate="Enter password">
+      <div class="wrap-input100 validate-i nput" data-validate="Enter password">
         <span class="btn-show-pass">
           <i class="zmdi zmdi-eye"></i>
         </span>
-        <input #pwd class="input100" type="password" name="pass">
-        <span class="focus-input100" data-placeholder="Password"></span>
+        <input #pwd class="input100" placeholder="Password" type="password" name="pass">
+        <span class="focus-input100" ></span>
       </div>
     </div>
     <div *ngIf="etat === false">

@@ -21,24 +21,22 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
 
   <div class="clearfix borderbox" id="page"><!-- column -->
    <div class="position_content" id="page_position_content">
-    <div class="clearfix colelem" id="pu97"><!-- group -->
-     <div class="clip_frame grpelem" id="u97"><!-- image -->
-      
+    <div class="clearfix colelem" id="pu99"><!-- group -->
+     <div class="clip_frame grpelem" id="u99"><!-- image -->
      </div>
-     <div class="clip_frame grpelem" id="u99" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
-      
+     <div class="clip_frame grpelem" id="u101" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
      </div>
-     <div class="clearfix grpelem" id="u101-4"><!-- content -->
-      <p>Liste intervenant(s)</p>
+     <div class="clearfix grpelem" id="u103-4"><!-- content -->
+      <p>Liste projet(s)</p>
      </div>
     </div>
-    <div *ngFor="let element of listProjet" class="clearfix colelem" id="u94"><!-- group -->
+    <div *ngFor="let element of listProjet" class="clearfix colelem" id="u94" (click)="goToProjet()"><!-- group -->
      <div class="rounded-corners grpelem" id="u96"><!-- simple frame --></div>
      <div class="clearfix grpelem" id="u95-4"><!-- content -->
-      <span (click)="goToVueIntervenant()">{{element}}</span>
+      <span (click)="goToProjet()">{{ element }}</span>
      </div>
     </div>
-    <div class="verticalspacer" data-offset-top="170" data-content-above-spacer="169" data-content-below-spacer="330" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="verticalspacer" data-offset-top="163" data-content-above-spacer="162" data-content-below-spacer="337" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
    </div>
   </div>
   <!-- Other scripts -->

@@ -11,6 +11,11 @@ import { VueFicheEleveComponent } from './admin-page/vue-fiche-eleve/vue-fiche-e
 import { VueFicheIntervenantComponent } from './admin-page/vue-fiche-intervenant/vue-fiche-intervenant.component';
 import { EleveComponent } from './eleve-page/eleve/eleve.component';
 import { ListIntervenantEleveComponent } from './eleve-page/list-intervenant-eleve/list-intervenant-eleve.component';
+import { ListIntervenantProjetComponent } from './eleve-page/list-intervenant-projet/list-intervenant-projet.component';
+import { VueProjetEleveComponent } from './eleve-page/vue-projet-eleve/vue-projet-eleve.component';
+import { NouvelleEquipeEleveComponent } from './eleve-page/nouvelle-equipe-eleve/nouvelle-equipe-eleve.component';
+import { VueIntervenantEleveComponent } from './eleve-page/vue-intervenant-eleve/vue-intervenant-eleve.component';
+import { ValidationIntervenantEleveComponent } from './eleve-page/validation-intervenant-eleve/validation-intervenant-eleve.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,7 +24,12 @@ const routes: Routes = [
   { path: 'adminEleve', component: VueFicheEleveComponent },
   { path: 'adminIntervenant', component: VueFicheIntervenantComponent },
   { path: 'eleve', component: EleveComponent },
-  { path: 'eleveListIntervenant', component: ListIntervenantEleveComponent }
+  { path: 'eleveListIntervenant', component: ListIntervenantEleveComponent },
+  { path: 'eleveListProjet', component: ListIntervenantProjetComponent },
+  { path: 'eleveVueProjet', component: VueProjetEleveComponent },
+  { path: 'eleveNouvelleEquipe', component: NouvelleEquipeEleveComponent },
+  { path: 'eleveVueIntervenant', component: VueIntervenantEleveComponent },
+  { path: 'eleveValidationIntervenant', component: VueIntervenantEleveComponent }
 ];
 
 @NgModule({
@@ -38,5 +48,7 @@ export const routingComponents = [
   VueFicheEleveComponent,
   VueFicheIntervenantComponent,
   EleveComponent,
-  ListIntervenantEleveComponent
+  ListIntervenantEleveComponent,
+  ListIntervenantProjetComponent,
+  VueIntervenantEleveComponent
 ];
