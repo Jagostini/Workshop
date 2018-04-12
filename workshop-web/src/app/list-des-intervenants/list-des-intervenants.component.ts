@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-list-des-intervenants',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListDesIntervenantsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
+  list = ['Elon Musk','Elonpa Musk'];
+  
   ngOnInit() {
   }
+
+  goToIntervenant() {
+    this.route.navigate(['eleveVueIntervenant']);
+  }
+
+  goToRetour() {
+    this.route.navigate(['eleveCreeEquipe']);
+  }
+  
 
 }

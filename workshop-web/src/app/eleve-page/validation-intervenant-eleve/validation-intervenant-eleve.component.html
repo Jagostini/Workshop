@@ -14,52 +14,51 @@ document.documentElement.className = document.documentElement.className.replace(
 if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "require.js", "index.css"], "outOfDate":[]};
 </script>
   
-  <title>Page d'accueil</title>
+  <title>validation intervenant</title>
   <!-- CSS -->
    </head>
  <body>
 
   <div class="clearfix borderbox" id="page"><!-- column -->
-   <div class="position_content" id="page_position_content">
-    <div class="clearfix colelem" id="pu100"><!-- group -->
-     <div class="browser_width grpelem" id="u100-bw">
-      <div id="u100"><!-- simple frame --></div>
-     </div>
-     <div class="clip_frame grpelem" id="u137"><!-- image -->
-      <img class="block" id="u137_img" src="images/image%20coll%c3%a9e%20387%20x%2092.png?crc=4111322005" alt="" data-heightwidthratio="0.23705722070844687" data-image-width="367" data-image-height="87"/>
-     </div>
-     <div class="clearfix grpelem" id="u139-4"><!-- content -->
-      <p>Intervenant</p>
-     </div>
+   <div class="clearfix colelem" id="pu320"><!-- group -->
+    <div class="browser_width grpelem" id="u320-bw">
+     <div id="u320"><!-- simple frame --></div>
     </div>
-    <div class="clearfix colelem" id="u94"><!-- column -->
-     <div class="clearfix colelem" id="pu101"><!-- group -->
-      <div class="rounded-corners grpelem" id="u101"><!-- simple frame --></div>
-      <div class="clearfix grpelem" id="u102-4"><!-- content -->
-       <p>Pascal Voisin</p>
-      </div>
-     </div>
-     <div class="clearfix colelem" id="u103-4"><!-- content -->
-      <p>Informations :</p>
-     </div>
-     <div class="clearfix colelem" id="u106-4"><!-- content -->
-      <p>Importance :</p>
-     </div>
-     <div class="clip_frame colelem" id="u270" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
-      <img class="block" id="u270_img" src="images/image%20coll%c3%a9e%20191%20x%2042.png?crc=312404287" alt="" width="191" height="42"/>
-     </div>
-     <div class="clip_frame colelem" id="u280" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
-      <img class="block" id="u280_img" src="images/image%20coll%c3%a9e%20191%20x%20422.png?crc=4100133891" alt="" width="191" height="42"/>
-     </div>
-     <div class="clip_frame colelem" id="u290" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
-      <img class="block" id="u290_img" src="images/image%20coll%c3%a9e%20191%20x%20423.png?crc=143213332" alt="" width="191" height="42"/>
-     </div>
-     <div class="clip_frame colelem" id="u300" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
-      <img class="block" id="u300_img" src="images/image%20coll%c3%a9e%20191%20x%20424.png?crc=513984434" alt="" width="191" height="42"/>
-     </div>
+    <div class="browser_width grpelem" id="u100-bw">
+     <div id="u100"><!-- simple frame --></div>
     </div>
-    <div class="verticalspacer" data-offset-top="718" data-content-above-spacer="718" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
+    <div class="clearfix grpelem" id="u139-4"><!-- content -->
+     <p>Intervenant</p>
+    </div>
+    <div class="clip_frame grpelem" id="u310" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+     <img (click)="goToRetour()"class="block" id="u310_img" src="../../../image/flecheRetour.png" alt="" width="36" height="36"/>
+    </div>
    </div>
+   <div class="clearfix colelem" id="pu101"><!-- group -->
+    <div class="rounded-corners grpelem" id="u101"><!-- simple frame --></div>
+    <div class="clearfix grpelem" id="u102-4"><!-- content -->
+     <p>Elon Musk</p>
+    </div>
+   </div>
+   <div class="clearfix colelem" id="u103-4"><!-- content -->
+    <p>Informations :</p>
+   </div>
+   <div class="clearfix colelem" id="u106-4"><!-- content -->
+    <p>Importance :</p>
+   </div>
+   <div class="clip_frame colelem" id="u270" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+    <img class="block" id="u270_img" src="../../../image/legere.png" alt="" width="191" height="42"/>
+   </div>
+   <div class="clip_frame colelem" id="u280" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+    <img class="block" id="u280_img" src="../../../image/milieu.png" alt="" width="191" height="42"/>
+   </div>
+   <div class="clip_frame colelem" id="u290" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+    <img class="block" id="u290_img" src="../../../image/fort.png" alt="" width="191" height="42"/>
+   </div>
+   <div class="clip_frame colelem" id="u300" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
+    <img (click)="goToFinish()" class="block" id="u300_img" src="../../../image/valider.png" alt="" width="191" height="42"/>
+   </div>
+   <div class="verticalspacer" data-offset-top="696" data-content-above-spacer="696" data-content-below-spacer="61" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
   </div>
   <!-- Other scripts -->
   <script type="text/javascript">

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-list-des-projets',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListDesProjetsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
+
+
+  listProj= ['projet 1', 'projet 2', 'projet 3', 'projet 4'];
 
   ngOnInit() {
+  }
+
+  goToProjet() {
+    this.route.navigate(['eleveVueProjet']);
   }
 
 }

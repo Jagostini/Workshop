@@ -34,6 +34,12 @@ import { NouveauIntervenantAdminComponent } from './admin-page/nouveau-intervena
 import { ListDesElevesComponent } from './list-des-eleves/list-des-eleves.component';
 import { ListDesIntervenantsComponent } from './list-des-intervenants/list-des-intervenants.component';
 import { ListDesProjetsComponent } from './list-des-projets/list-des-projets.component';
+import { CreeEquipeEleveComponent } from './eleve-page/cree-equipe-eleve/cree-equipe-eleve.component';
+import { ListEquipeIntervenantComponent } from './list-equipe-intervenant/list-equipe-intervenant.component';
+import { ListProjetIntervenantComponent } from './list-projet-intervenant/list-projet-intervenant.component';
+import { ListeElevesAdminComponent } from './liste-eleves-admin/liste-eleves-admin.component';
+import { ListeIntervenantsAdminComponent } from './liste-intervenants-admin/liste-intervenants-admin.component';
+import { ListeProjetsAdminComponent } from './liste-projets-admin/liste-projets-admin.component';
 
 
 @NgModule({
@@ -61,6 +67,12 @@ import { ListDesProjetsComponent } from './list-des-projets/list-des-projets.com
     ListDesElevesComponent,
     ListDesIntervenantsComponent,
     ListDesProjetsComponent,
+    CreeEquipeEleveComponent,
+    ListEquipeIntervenantComponent,
+    ListProjetIntervenantComponent,
+    ListeElevesAdminComponent,
+    ListeIntervenantsAdminComponent,
+    ListeProjetsAdminComponent,
   ],
   imports: [
     BrowserModule,

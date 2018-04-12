@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-nouvelle-equipe-eleve',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NouvelleEquipeEleveComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit() {
+
   }
+
+  goToEleveEquipe() {
+    this.route.navigate(['eleveCreeEquipe']);
+  }
+
+  goToRetour() {
+    this.route.navigate(['eleveVueProjet']);
+  }
+
+  
 
 }

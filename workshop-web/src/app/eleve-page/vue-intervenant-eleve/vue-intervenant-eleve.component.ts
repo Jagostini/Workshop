@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLinkActive } from '@angular/router';
+import { Route } from '@angular/compiler/src/core';
 
 @Component({
   selector: 'app-vue-intervenant-eleve',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VueIntervenantEleveComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit() {
+  }
+
+  goToAppelerIntervenant() {
+    this.route.navigate(['eleveValidationIntervenant']);
+  }
+
+  goToRetour() {
+    this.route.navigate(['listIntervenant']);
   }
 
 }

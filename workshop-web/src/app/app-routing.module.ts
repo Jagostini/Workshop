@@ -22,8 +22,25 @@ import { NouveauIntervenantAdminComponent } from './admin-page/nouveau-intervena
 import { ListDesElevesComponent } from './list-des-eleves/list-des-eleves.component';
 import { ListDesIntervenantsComponent } from './list-des-intervenants/list-des-intervenants.component';
 import { ListDesProjetsComponent } from './list-des-projets/list-des-projets.component';
+import { CreeEquipeEleveComponent } from './eleve-page/cree-equipe-eleve/cree-equipe-eleve.component';
+
+// New
+
+import { ListEquipeIntervenantComponent } from './list-equipe-intervenant/list-equipe-intervenant.component';
+import { ListProjetIntervenantComponent } from './list-projet-intervenant/list-projet-intervenant.component';
+import { ListeElevesAdminComponent } from './liste-eleves-admin/liste-eleves-admin.component';
+import { ListeIntervenantsAdminComponent } from './liste-intervenants-admin/liste-intervenants-admin.component';
+import { ListeProjetsAdminComponent } from './liste-projets-admin/liste-projets-admin.component';
+
 
 const routes: Routes = [
+  { path: 'ListEquipeIntervenantComponent', component: ListEquipeIntervenantComponent },
+  { path: 'ListProjetIntervenantComponent', component: ListProjetIntervenantComponent },
+  { path: 'ListeElevesAdminComponent', component: ListeElevesAdminComponent },
+  { path: 'ListeIntervenantsAdminComponent', component: ListeIntervenantsAdminComponent },
+  { path: 'ListeProjetsAdminComponent', component: ListeProjetsAdminComponent },
+
+
   { path: '', component: HomeComponent },
   { path: 'admin', component: AdminComponent },
   { path: 'adminProjet', component: VueProjetAdminComponent },
@@ -35,13 +52,14 @@ const routes: Routes = [
   { path: 'eleveVueProjet', component: VueProjetEleveComponent },
   { path: 'eleveNouvelleEquipe', component: NouvelleEquipeEleveComponent },
   { path: 'eleveVueIntervenant', component: VueIntervenantEleveComponent },
-  { path: 'eleveValidationIntervenant', component: VueIntervenantEleveComponent },
+  { path: 'eleveValidationIntervenant', component: ValidationIntervenantEleveComponent },
   { path: 'adminNouveauProjet', component: NouveauProjetAdminComponent },
   { path: 'adminNouveauEleve', component: NouveauEleveAdminComponent },
   { path: 'adminNouveauIntervenant', component: NouveauIntervenantAdminComponent },
-  { path: 'listEleves', component: ListDesElevesComponent },
+  { path: 'listEleve', component: ListDesElevesComponent },
   { path: 'listIntervenant', component: ListDesIntervenantsComponent },
-  { path: 'listProjet', component: ListDesProjetsComponent }
+  { path: 'listProjet', component: ListDesProjetsComponent },
+  { path: 'eleveCreeEquipe', component: CreeEquipeEleveComponent }
 ];
 
 @NgModule({

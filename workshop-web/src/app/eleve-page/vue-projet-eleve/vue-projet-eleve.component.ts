@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-vue-projet-eleve',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VueProjetEleveComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit() {
+  }
+  goToNouvelleEquipe() {
+    this.route.navigate(['eleveNouvelleEquipe']);
+  }
+
+  goToRetour() {
+    this.route.navigate(['listProjet']);
   }
 
 }
