@@ -17,6 +17,13 @@ import { NewTeamEleveComponent } from './eleve-page/new-team-eleve/new-team-elev
 import { ValidationIntervenantEleveComponent } from './eleve-page/validation-intervenant-eleve/validation-intervenant-eleve.component';
 import { VuIntervenantEleveComponent } from './eleve-page/vu-intervenant-eleve/vu-intervenant-eleve.component';
 import { VuProjetEleveComponent } from './eleve-page/vu-projet-eleve/vu-projet-eleve.component';
+import { ChoixIntervenantComponent } from './intervenant-page/choix-intervenant/choix-intervenant.component';
+import { GestionEquipeComponent } from './intervenant-page/gestion-equipe/gestion-equipe.component';
+import { GestionProjetComponent } from './intervenant-page/gestion-projet/gestion-projet.component';
+import { NewProjetComponent } from './intervenant-page/new-projet/new-projet.component';
+import { NewEleveComponent } from './intervenant-page/new-eleve/new-eleve.component';
+import { VuEquipeComponent } from './intervenant-page/vu-equipe/vu-equipe.component';
+import { VuProjetComponent } from './intervenant-page/vu-projet/vu-projet.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -31,7 +38,14 @@ const routes: Routes = [
   { path: 'eleveNewTeam', component: NewTeamEleveComponent },
   { path: 'eleveValidationIntervenant', component: ValidationIntervenantEleveComponent },
   { path: 'eleveVuIntervenant', component: VuIntervenantEleveComponent },
-  { path: 'eleveVuProjet', component: VuProjetEleveComponent }
+  { path: 'eleveVuProjet', component: VuProjetEleveComponent },
+  { path: 'Intervenant', component: ChoixIntervenantComponent },
+  { path: 'IntervenantGestionEquipe', component: GestionEquipeComponent },
+  { path: 'IntervenantGestionProjet', component: GestionProjetComponent },
+  { path: 'IntervenantNewProjet', component: NewProjetComponent },
+  { path: 'IntervenantNewEleve', component: NewEleveComponent },
+  { path: 'IntervenantVuEquipe', component: VuEquipeComponent },
+  { path: 'IntervenantVuProjet', component: VuProjetComponent }
 ];
 
 @NgModule({
@@ -56,5 +70,12 @@ export const routingComponents = [
   NewTeamEleveComponent,
   ValidationIntervenantEleveComponent,
   VuIntervenantEleveComponent,
-  VuProjetEleveComponent
+  VuProjetEleveComponent,
+  ChoixIntervenantComponent,
+  GestionEquipeComponent,
+  GestionProjetComponent,
+  NewProjetComponent,
+  NewEleveComponent,
+  VuEquipeComponent,
+  VuProjetComponent
 ];
