@@ -16,6 +16,12 @@ import { VueProjetEleveComponent } from './eleve-page/vue-projet-eleve/vue-proje
 import { NouvelleEquipeEleveComponent } from './eleve-page/nouvelle-equipe-eleve/nouvelle-equipe-eleve.component';
 import { VueIntervenantEleveComponent } from './eleve-page/vue-intervenant-eleve/vue-intervenant-eleve.component';
 import { ValidationIntervenantEleveComponent } from './eleve-page/validation-intervenant-eleve/validation-intervenant-eleve.component';
+import { NouveauProjetAdminComponent } from './admin-page/nouveau-projet-admin/nouveau-projet-admin.component';
+import { NouveauEleveAdminComponent } from './admin-page/nouveau-eleve-admin/nouveau-eleve-admin.component';
+import { NouveauIntervenantAdminComponent } from './admin-page/nouveau-intervenant-admin/nouveau-intervenant-admin.component';
+import { ListDesElevesComponent } from './list-des-eleves/list-des-eleves.component';
+import { ListDesIntervenantsComponent } from './list-des-intervenants/list-des-intervenants.component';
+import { ListDesProjetsComponent } from './list-des-projets/list-des-projets.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -29,7 +35,13 @@ const routes: Routes = [
   { path: 'eleveVueProjet', component: VueProjetEleveComponent },
   { path: 'eleveNouvelleEquipe', component: NouvelleEquipeEleveComponent },
   { path: 'eleveVueIntervenant', component: VueIntervenantEleveComponent },
-  { path: 'eleveValidationIntervenant', component: VueIntervenantEleveComponent }
+  { path: 'eleveValidationIntervenant', component: VueIntervenantEleveComponent },
+  { path: 'adminNouveauProjet', component: NouveauProjetAdminComponent },
+  { path: 'adminNouveauEleve', component: NouveauEleveAdminComponent },
+  { path: 'adminNouveauIntervenant', component: NouveauIntervenantAdminComponent },
+  { path: 'listEleves', component: ListDesElevesComponent },
+  { path: 'listIntervenant', component: ListDesIntervenantsComponent },
+  { path: 'listProjet', component: ListDesProjetsComponent }
 ];
 
 @NgModule({
