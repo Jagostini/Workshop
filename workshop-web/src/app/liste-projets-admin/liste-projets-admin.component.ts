@@ -10,9 +10,13 @@ export class ListeProjetsAdminComponent implements OnInit {
 
   constructor(private route:Router) { }
 
-  listProj= ['projet 1', 'projet 2', 'projet 3', 'projet 4'];
+  listProj = ['projet 1', 'projet 2', 'projet 3', 'projet 4'];
 
   ngOnInit() {
+  }
+
+  goToBack() {
+    this.route.navigate(['admin']);
   }
 
 }

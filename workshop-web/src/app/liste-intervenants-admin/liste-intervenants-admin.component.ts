@@ -8,8 +8,8 @@ import { Router, RouterLinkActive } from '@angular/router';
 })
 export class ListeIntervenantsAdminComponent implements OnInit {
 
-  constructor(private route:Router) { }
-  list = ['Elon Musk','Elonpa Musk'];
+  constructor(private route: Router) { }
+  list = ['Elon Musk', 'Elonpa Musk'];
 
   ngOnInit() {
   }
@@ -18,4 +18,10 @@ export class ListeIntervenantsAdminComponent implements OnInit {
     this.route.navigate(['adminIntervenant']);
   }
 
+  gotoback() {
+    this.route.navigate(['admin']);
+  }
+  gotoneweleve() {
+    this.route.navigate(['adminNouveauEleve']);
+  }
 }

@@ -13,6 +13,10 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
+  goToHome() {
+    this.route.navigate(['']);
+  }
+
   goToProjet() {
     this.route.navigate(['ListeProjetsAdminComponent']);
   }
