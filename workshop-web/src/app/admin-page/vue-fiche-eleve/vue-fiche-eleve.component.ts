@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLinkActive, Route } from '@angular/router';
 
 @Component({
   selector: 'app-vue-fiche-eleve',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VueFicheEleveComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit() {
+  }
+
+  gotoback() {
+    this.route.navigate(['ListeElevesAdminComponent']);
   }
 
 }

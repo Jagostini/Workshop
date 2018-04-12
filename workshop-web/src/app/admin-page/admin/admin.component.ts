@@ -14,15 +14,15 @@ export class AdminComponent implements OnInit {
   }
 
   goToProjet() {
-    this.route.navigate(['adminProjet']);
+    this.route.navigate(['ListeProjetsAdminComponent']);
   }
 
   goToEleve() {
-    this.route.navigate(['adminEleve']);
+    this.route.navigate(['ListeElevesAdminComponent']);
   }
 
   goToIntervenant() {
-    this.route.navigate(['adminIntervenant']);
+    this.route.navigate(['ListeIntervenantsAdminComponent']);
   }
 
 }

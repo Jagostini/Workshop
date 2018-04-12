@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLinkActive, Route } from '@angular/router';
 
 @Component({
   selector: 'app-liste-eleves-admin',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListeElevesAdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
 
   ngOnInit() {
+  }
+
+  gotoficheeleve() {
+    this.route.navigate(['adminEleve']);
+  }
+  gotoback() {
+    this.route.navigate(['admin']);
   }
 
 }

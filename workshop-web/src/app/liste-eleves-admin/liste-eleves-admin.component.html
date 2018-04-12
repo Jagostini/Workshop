@@ -25,7 +25,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
      <div id="u631"><!-- group -->
       <div class="clearfix" id="u631_align_to_page">
        <div class="clip_frame grpelem" id="u618" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"><!-- image -->
-        <img class="block" id="u618_img" src="../../image/flecheRetour.png" alt="" width="36" height="36"/>
+        <img (click)="gotoback()"class="block" id="u618_img" src="../../image/flecheRetour.png" alt="" width="36" height="36"/>
        </div>
        <div class="clearfix grpelem" id="u607-4"><!-- content -->
         <p>Gestion des éleve(s)</p>
@@ -39,7 +39,7 @@ if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required
     <div class="clearfix colelem" id="u476"><!-- group -->
      <div class="rounded-corners grpelem" id="u511"><!-- simple frame --></div>
      <div class="clearfix grpelem" id="u508-4"><!-- content -->
-      <p>Eleve 1</p>
+      <p (click)="gotoficheeleve()">Eleve 1</p>
      </div>
     </div>
     <div class="clip_frame colelem" id="u547"><!-- image -->

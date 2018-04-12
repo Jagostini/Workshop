@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-liste-intervenants-admin',
@@ -7,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListeIntervenantsAdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route:Router) { }
   list = ['Elon Musk','Elonpa Musk'];
 
   ngOnInit() {
+  }
+
+  goToProjet() {
+    this.route.navigate(['adminIntervenant']);
   }
 
 }

@@ -41,6 +41,14 @@ import { ListeElevesAdminComponent } from './liste-eleves-admin/liste-eleves-adm
 import { ListeIntervenantsAdminComponent } from './liste-intervenants-admin/liste-intervenants-admin.component';
 import { ListeProjetsAdminComponent } from './liste-projets-admin/liste-projets-admin.component';
 
+// Intervenants
+import { ChoixIntervenantComponent } from './intervenant-page/choix-intervenant/choix-intervenant.component';
+import { GestionEquipeComponent } from './intervenant-page/gestion-equipe/gestion-equipe.component';
+import { GestionProjetComponent } from './intervenant-page/gestion-projet/gestion-projet.component';
+import { VuEquipeComponent } from './intervenant-page/vu-equipe/vu-equipe.component';
+import { VuProjetComponent } from './intervenant-page/vu-projet/vu-projet.component';
+import { NotificationComponent } from './intervenant-page/notification/notification.component';
+
 
 @NgModule({
   declarations: [
@@ -73,6 +81,12 @@ import { ListeProjetsAdminComponent } from './liste-projets-admin/liste-projets-
     ListeElevesAdminComponent,
     ListeIntervenantsAdminComponent,
     ListeProjetsAdminComponent,
+    ChoixIntervenantComponent,
+    GestionEquipeComponent,
+    GestionProjetComponent,
+    VuEquipeComponent,
+    VuProjetComponent,
+    NotificationComponent
   ],
   imports: [
     BrowserModule,
