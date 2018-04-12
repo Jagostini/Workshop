@@ -21,7 +21,7 @@ export class ListeIntervenantsAdminComponent implements OnInit {
   gotoback() {
     this.route.navigate(['admin']);
   }
-  gotoneweleve() {
-    this.route.navigate(['adminNouveauEleve']);
+  gotonewintervenant() {
+    this.route.navigate(['adminNouveauIntervenant']);
   }
 }

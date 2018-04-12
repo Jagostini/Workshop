@@ -8,7 +8,7 @@ import { Router, RouterLinkActive } from '@angular/router';
 })
 export class ListeProjetsAdminComponent implements OnInit {
 
-  constructor(private route:Router) { }
+  constructor(private route: Router) { }
 
   listProj = ['projet 1', 'projet 2', 'projet 3', 'projet 4'];
 
@@ -19,4 +19,11 @@ export class ListeProjetsAdminComponent implements OnInit {
     this.route.navigate(['admin']);
   }
 
+  goToNewProjet() {
+    this.route.navigate(['adminNouveauProjet']);
+  }
+
+  goToProjet() {
+    this.route.navigate(['adminProjet']);
+  }
 }

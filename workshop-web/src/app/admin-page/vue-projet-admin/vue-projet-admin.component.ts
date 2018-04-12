@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-vue-projet-admin',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VueProjetAdminComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit() {
+  }
+
+  goToBack() {
+    this.route.navigate(['ListeProjetsAdminComponent']);
   }
 
 }
